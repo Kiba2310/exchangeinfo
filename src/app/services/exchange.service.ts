@@ -7,7 +7,7 @@ import { Currency, ExchangeRate, ConversionResult } from '../models/currency.mod
   providedIn: 'root'
 })
 export class ExchangeService {
-  private apiKey = '646e67c47e0036905272fc6c'; // Replace with your actual API key
+  private apiKey = 'be9ffceaf7abad71aa66b6b5'; 
   private baseUrl = 'https://v6.exchangerate-api.com/v6';
 
   private currencies: Currency[] = [
