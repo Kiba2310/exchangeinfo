@@ -1,0 +1,15 @@
+<div class="converter-container">
+  <app-currency-form 
+    [currencies]="currencies"
+    (convert)="onConvert($event)">
+  </app-currency-form>
+
+  <div class="result-container" *ngIf="loading || conversionResult">
+    <mat-spinner *ngIf="loading" diameter="40"></mat-spinner>
+    
+    <app-currency-card 
+      *ngIf="!loading && conversionResult"
+      [result]="conversionResult">
+    </app-currency-card>
+  </div>
+</div>
